@@ -7,12 +7,14 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D body;
 
     public Animator animator;
+    public Vector2 playerVelocity;
 
     float horizontal;
     float vertical;
-    float moveLimiter = 0.7f;
+    float isRunning;
 
-    public float runSpeed = 10.0f;
+    public float walkSpeed = 2.5f;
+    public float runSpeed = 5.0f;
 
     void Start()
     {
@@ -26,14 +28,28 @@ public class PlayerController : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+        isRunning = Input.GetAxisRaw("Run");
 
-        if (horizontal != 0 && vertical != 0)
+        if (horizontal != 0 || vertical != 0)
         {
-            horizontal *= moveLimiter;
-            vertical *= moveLimiter;
+            playerVelocity = new Vector2(horizontal, vertical);
+            playerVelocity = playerVelocity.normalized;
+            if (isRunning > 0)
+            {
+                playerVelocity *= runSpeed;
+            }
+            else 
+            {
+                playerVelocity *= walkSpeed;
+            }
+        }
+        else
+        {
+            playerVelocity = Vector2.zero;
         }
 
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        body.velocity = playerVelocity;
+        //Debug.Log(body.velocity);
 
 
     }
