@@ -1,0 +1,287 @@
+fileFormatVersion: 2
+guid: be63513e4f94bd9428c0a21f228fb7bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2273113492986477673
+    second: HealthBarBlack_0
+  - first:
+      213: 2872300868631788838
+    second: HealthBarBlack_1
+  - first:
+      213: 7025210584647381
+    second: HealthBarBlack_2
+  - first:
+      213: -4569353267844001177
+    second: HealthBarBlack_3
+  - first:
+      213: 5232322103630044708
+    second: HealthBarBlack_4
+  - first:
+      213: 463926394405310199
+    second: HealthBarBlack_5
+  - first:
+      213: 7418973362023002739
+    second: HealthBarBlack_6
+  - first:
+      213: 8512191440150576272
+    second: HealthBarBlack_7
+  - first:
+      213: 1098044112974186912
+    second: HealthBarBlack_8
+  - first:
+      213: 7641338996342816924
+    second: HealthBarBlack_9
+  - first:
+      213: 2469047448166393415
+    second: HealthBarBlack_10
+  - first:
+      213: 7427076234643345030
+    second: HealthBarBlack_11
+  - first:
+      213: -1157084303882696612
+    second: HealthBarBlack_12
+  - first:
+      213: 6440372689119872944
+    second: HealthBarBlack_13
+  - first:
+      213: -4799038391727409449
+    second: HealthBarBlack_14
+  - first:
+      213: -7819023225163679678
+    second: HealthBarBlack_15
+  - first:
+      213: -6330251946196608105
+    second: HealthBarBlack_16
+  - first:
+      213: -8038654991892535777
+    second: HealthBarBlack_17
+  - first:
+      213: 8634918742764196901
+    second: HealthBarBlack_18
+  - first:
+      213: 6930645422910451410
+    second: HealthBarBlack_19
+  - first:
+      213: -7812848375643321995
+    second: HealthBarBlack_20
+  - first:
+      213: -8795072197231907136
+    second: HealthBarBlack_21
+  - first:
+      213: 8190481337104812463
+    second: HealthBarBlack_22
+  - first:
+      213: -6750678326773441425
+    second: HealthBarBlack_23
+  - first:
+      213: -6333982040451859837
+    second: HealthBarBlack_24
+  - first:
+      213: 8963233855734140167
+    second: HealthBarBlack_25
+  - first:
+      213: -1188818506439913186
+    second: HealthBarBlack_26
+  - first:
+      213: 2735329660641504879
+    second: HealthBarBlack_27
+  - first:
+      213: 58081815985218325
+    second: HealthBarBlack_28
+  - first:
+      213: -3472339729075473859
+    second: HealthBarBlack_29
+  - first:
+      213: 3350922534681958498
+    second: HealthBarBlack_30
+  - first:
+      213: 157579217933452703
+    second: HealthBarBlack_31
+  - first:
+      213: 383767418822873935
+    second: HealthBarBlack_32
+  - first:
+      213: -481720518389905805
+    second: HealthBarBlack_33
+  - first:
+      213: 5284729442222877155
+    second: HealthBarBlack_34
+  - first:
+      213: -6636129147764789726
+    second: HealthBarBlack_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HealthBarBlack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 51
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793c46452574470e0800000000000000
+      internalID: -2273113492986477673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBarBlack_1
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 0
+        width: 47
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62df7d20c667cd720800000000000000
+      internalID: 2872300868631788838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HealthBarBlack_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 711
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6ce5d4465f81000800000000000000
+      internalID: 7025210584647381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
