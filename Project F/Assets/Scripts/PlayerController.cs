@@ -8,10 +8,20 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
     public Vector2 playerVelocity;
+    public BulletController bulletController;
+    public Vector3 mousePosition;
+    private Plane plane;
 
     float horizontal;
     float vertical;
     float isRunning;
+
+    public int maxAmmo;
+    public int currentAmmo;
+    public float attackSpeed;
+    public float attackCouldown;
+
+  
 
     public float walkSpeed = 2.5f;
     public float runSpeed = 5.0f;
@@ -19,6 +29,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        plane = new Plane(Vector3.back, 0);
     }
 
     void Update()
@@ -50,7 +61,24 @@ public class PlayerController : MonoBehaviour
 
         body.velocity = playerVelocity;
         //Debug.Log(body.velocity);
+        attackCouldown += Time.deltaTime;
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (attackSpeed <= attackCouldown)
+            {
+                float distance;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (plane.Raycast(ray, out distance))
+                {
+                    mousePosition = ray.GetPoint(distance);
+                }
+                Debug.Log(mousePosition);
+                GameObject pew = Instantiate(bulletController.gameObject, this.transform.position, this.transform.rotation);
+                pew.GetComponent<BulletController>().SetVelocity(new Vector2(mousePosition.x - this.transform.position.x, mousePosition.y - this.transform.position.y).normalized);
+                attackCouldown = 0;
+            }
+        }
 
     }
 
