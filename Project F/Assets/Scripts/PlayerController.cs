@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D body;
-
+	TimeTravel traveling;
+	
     public Animator animator;
     public Vector2 playerVelocity;
     public BulletController bulletController;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+		traveling = GetComponent<TimeTravel>();
         plane = new Plane(Vector3.back, 0);
     }
 
@@ -79,7 +81,11 @@ public class PlayerController : MonoBehaviour
                 attackCouldown = 0;
             }
         }
-
+		
+		if (Input.GetButtonDown("Fire2"))
+        {
+			traveling.travel();
+		}
     }
 
     void FixedUpdate()
