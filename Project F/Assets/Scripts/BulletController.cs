@@ -9,7 +9,6 @@ public class BulletController : MonoBehaviour
     public float bulletSpeed;
     public float lifeTime = 5f;
 
-    // Start is called before the first frame update
     void Update()
     {
         lifeTime -= Time.deltaTime;
@@ -19,7 +18,6 @@ public class BulletController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         body.MovePosition(body.position + velocity * bulletSpeed * Time.fixedDeltaTime);

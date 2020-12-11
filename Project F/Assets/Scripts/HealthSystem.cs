@@ -5,9 +5,15 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
+	private GameObject playerObj = null;
+	
+	public DeathMenu deathMenu;
     public int health;
     public int maxHealth;
 
+	public int activeAnchors;
+	public int maxAnchors;
+	
     public Image[] lives;
 
     public Sprite fullLive;
@@ -16,16 +22,34 @@ public class HealthSystem : MonoBehaviour
     public GameObject Panel;
 
     public float step = 0.25f;
+	
+	public static bool dead;
 
-    // Start is called before the first frame update
     void Start()
     {
-      
+		if (playerObj == null)
+		{
+			playerObj = GameObject.Find("Player");
+		}
+		activeAnchors = 0;
+		dead = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
+		if (health <= 0)
+		{
+			if (activeAnchors <= 0)
+			{
+				Dead();
+			}
+			else
+			{
+				toLastAnchor();
+			}
+			
+		}
+		
         if (maxHealth <= 4)
         {
             ChangeMaxHealth(maxHealth = 4);
@@ -59,12 +83,25 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    void ChangeMaxHealth(int maxHealth) {
+    void ChangeMaxHealth(int maxHealth) 
+	{
         this.maxHealth = maxHealth;
         Live.transform.localScale = new Vector3((1 + (maxHealth - 4) * step), Live.transform.localScale.y, Live.transform.localScale.z);
         //Panel.transform.position = new Vector3(maxHealth,
         //                                        Panel.transform.position.y,
         //                                        Panel.transform.position.z);
     }
+	
+	void Dead() 
+	{
+		Debug.Log("Dead");
+		deathMenu.ActivateDeathMenu();
+		dead = true;
+		playerObj.GetComponent<Animator>().SetTrigger("Death");
+	}
     
+	void toLastAnchor()
+	{
+		
+	}
 }
