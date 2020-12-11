@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
         animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
-
+		animator.SetFloat("isRunning", Input.GetAxisRaw("Run"));
+		
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         isRunning = Input.GetAxisRaw("Run");
