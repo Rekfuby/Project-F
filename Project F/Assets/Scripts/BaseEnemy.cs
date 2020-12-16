@@ -2,11 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class BaseEnemy : MonoBehaviour
 {
-	int health = 5;
-	float maxHealth = 5f;
-	float moveSpeed = 3f;
+	protected float health = 5f;
+	protected float maxHealth = 5f;
+	[SerializeField]
+	protected float moveSpeed = 3f;
+	
+	public void damaged(float damage)
+	{
+		health = health - damage;
+		if (health <= 0) 
+		{
+			Dead();
+		}
+	}
+	
+	public void Dead()
+	{
+		Destroy(this.gameObject);
+	}
 	
     void Start()
     {

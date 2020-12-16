@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8263104782604960217}
   - component: {fileID: 8263104782604960218}
   - component: {fileID: 8263104782604960216}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hoicker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1959494777
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e34be3c5dec9d9d4581b6b3adabadc17, type: 3}
   m_Color: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &8263104782604960217
 Rigidbody2D:
   serializedVersion: 4
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f8767583274b0141b38e6d632a284a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 5

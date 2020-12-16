@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 50872229}
   - component: {fileID: 50872231}
   - component: {fileID: 50872230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 55023616}
   - component: {fileID: 55023618}
   - component: {fileID: 55023617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 68157014}
   - component: {fileID: 68157015}
   - component: {fileID: 68157016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 259613039}
   - component: {fileID: 259613041}
   - component: {fileID: 259613040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ GameObject:
   - component: {fileID: 314663751}
   - component: {fileID: 314663752}
   - component: {fileID: 314663753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,7 +784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 367634460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roofs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   - component: {fileID: 410356040}
   - component: {fileID: 410356042}
   - component: {fileID: 410356041}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +931,7 @@ GameObject:
   - component: {fileID: 523511634}
   - component: {fileID: 523511636}
   - component: {fileID: 523511635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 596779459}
   - component: {fileID: 596779461}
   - component: {fileID: 596779460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,7 +1159,7 @@ GameObject:
   - component: {fileID: 705482238}
   - component: {fileID: 705482240}
   - component: {fileID: 705482239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1468,7 +1468,7 @@ GameObject:
   - component: {fileID: 922669412}
   - component: {fileID: 922669414}
   - component: {fileID: 922669413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,7 +1600,7 @@ GameObject:
   - component: {fileID: 1080694244}
   - component: {fileID: 1080694243}
   - component: {fileID: 1080694245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1708,7 +1708,7 @@ GameObject:
   - component: {fileID: 1088127338}
   - component: {fileID: 1088127340}
   - component: {fileID: 1088127339}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1816,7 +1816,7 @@ GameObject:
   - component: {fileID: 1130271887}
   - component: {fileID: 1130271888}
   - component: {fileID: 1130271889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1318920094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2002,7 @@ GameObject:
   - component: {fileID: 1372063037}
   - component: {fileID: 1372063039}
   - component: {fileID: 1372063038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2110,7 +2110,7 @@ GameObject:
   - component: {fileID: 1438597833}
   - component: {fileID: 1438597834}
   - component: {fileID: 1438597835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2299,7 +2299,7 @@ GameObject:
   - component: {fileID: 1497335931}
   - component: {fileID: 1497335930}
   - component: {fileID: 1497335932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2596,7 +2596,7 @@ GameObject:
   - component: {fileID: 1569530581}
   - component: {fileID: 1569530583}
   - component: {fileID: 1569530582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2702,7 +2702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1647218582}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2734,7 +2734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1674553350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roofs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2926,7 +2926,7 @@ GameObject:
   - component: {fileID: 1917194376}
   - component: {fileID: 1917194378}
   - component: {fileID: 1917194377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Roof6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3260,21 +3260,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8263104782604960220, guid: aeab97fd88bb4e64a9391df926036784,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1959494777
-      objectReference: {fileID: 0}
-    - target: {fileID: 8263104782604960220, guid: aeab97fd88bb4e64a9391df926036784,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8263104782604960220, guid: aeab97fd88bb4e64a9391df926036784,
-        type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8263104782604960221, guid: aeab97fd88bb4e64a9391df926036784,
         type: 3}
       propertyPath: m_Name
@@ -3408,81 +3393,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.6666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 2.6666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1959494777
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620926003759, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632880, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632880, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632881, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1959494777
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632881, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632881, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632881, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632881, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8613867620969632881, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ba2e1607c217f14b88f6da9f6be4b33, type: 3}

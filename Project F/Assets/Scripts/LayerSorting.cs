@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LayerSorting : MonoBehaviour
 {
-	Camera cam;
+	
 	
     void Start()
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hoicker : MonoBehaviour
+public class Hoicker : BaseEnemy
 {
     private GameObject playerObj = null;
 	Vector2 playerOffPos;
@@ -13,7 +13,7 @@ public class Hoicker : MonoBehaviour
 	
 	float targetRange = 5f;
 	float attackRange = 1.3f;
-	float moveSpeed = 5f;
+	
 	float preAttackTime = 0.75f;
 	float attackCD = 1f;
 	float attackTimer = 0;

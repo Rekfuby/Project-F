@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8613867620926003754}
   - component: {fileID: 8613867620926003755}
   - component: {fileID: 8613867620926003748}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,12 +83,12 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.5384616, y: 2.4615386}
+  m_Size: {x: 2.6666667, y: 2.6666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &8613867620926003758
 Rigidbody2D:
   serializedVersion: 4
@@ -129,8 +129,8 @@ MonoBehaviour:
   mousePosition: {x: 0, y: 0, z: 0}
   maxAmmo: 5
   currentAmmo: 5
-  attackSpeed: 1
-  attackCouldown: 0.2
+  attackSpeed: 0.3
+  attackCooldown: 0
   walkSpeed: 2.5
   runSpeed: 5
 --- !u!61 &8613867620926003753
@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8613867620969632880}
   - component: {fileID: 8613867620969632881}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8613867620969632887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 1.8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8613867620926003752}
@@ -290,11 +290,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1959494777
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -303,7 +303,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &8613867621915869072
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 8613867621915869036}
   - component: {fileID: 8613867621915869075}
   - component: {fileID: 8613867621915869073}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
