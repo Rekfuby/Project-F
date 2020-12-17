@@ -145,8 +145,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0}
   body: {fileID: 2187634227631224995}
-  bulletSpeed: 25
-  lifeTime: 5
+  bulletSpeed: 50
+  lifeTime: 2
+  damage: 2
   canAttackLayers:
     serializedVersion: 2
     m_Bits: 512
