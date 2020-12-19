@@ -1802,7 +1802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a8367c4faeae04da78293cd8e9589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 0
+  dialogueFlag: 0
   npcNameText: {fileID: 1967233626}
 --- !u!4 &681603685
 Transform:
@@ -3336,6 +3336,103 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1408501476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408501477}
+  - component: {fileID: 1408501479}
+  - component: {fileID: 1408501478}
+  m_Layer: 0
+  m_Name: DialogueTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1408501477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408501476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37, y: -4.73, z: 0}
+  m_LocalScale: {x: 7.701575, y: 4.7799835, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1267857674}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408501478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408501476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71856feb444506843a5b803cbdfe2318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    playerName: LYOHA
+    playerSentences:
+    - Good morning, I guess...
+    - ...
+    - I know how to move.
+    - Shame...
+    npcName: IFSX-001
+    npcSentences:
+    - Good morning, Mr. Illarionov! Welcome to Obligatory Pre-Experiment Alternate
+      Reality Hazard Course, where you'll be trained for your next experiment. I
+      am your robotic assistant DOK.
+    - This is your 56th course of this year, good job!
+    - First of all, movement course!
+    - Use "W", "A", "S", "D" to Move.
+    - Now press "Left Shift" with movement key to Run.
+    - Now, object interaction.
+    - Press "E" to Use or Pick up an object near you.
+    - Pick up a pistol from the desk.
+    - Press "Left Mouse Button" to shoot. Don't worry, your bullets won't do any
+      harm in Alternate Reality.
+    - Your next experiment involves short time travelling. You may experience permanent
+      psychological or corporal traumas. Be warned that once you activate your time
+      travelling device, Our company will not be responsible for any mental or physical
+      damage you took. So, good luck!
+    - To end this course, pick up a key card from the desk and Use it on the blast
+      door.
+--- !u!61 &1408501479
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408501476}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1419082167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,103 +3513,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419082167}
   m_CullTransparentMesh: 0
---- !u!1 &1408501476
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1408501477}
-  - component: {fileID: 1408501479}
-  - component: {fileID: 1408501478}
-  m_Layer: 0
-  m_Name: DialogueTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1408501477
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408501476}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.37, y: -4.73, z: 0}
-  m_LocalScale: {x: 7.701575, y: 4.7799835, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1267857674}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1408501478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408501476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71856feb444506843a5b803cbdfe2318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    playerName: LYOHA
-    playerSentences:
-    - Good morning, I guess...
-    - '...'
-    - I know how to move.
-    - Shame...
-    npcName: IFSX-001
-    npcSentences:
-    - Good morning, Mr. Illarionov! Welcome to Obligatory Pre-Experiment Alternate
-      Reality Hazard Course, where you'll be trained for your next experiment. I am
-      your robotic assistant DOK.
-    - This is your 56th course of this year, good job!
-    - First of all, movement course!
-    - Use "W", "A", "S", "D" to Move.
-    - Now press "Left Shift" with movement key to Run.
-    - Now, object interaction.
-    - Press "E" to Use or Pick up an object near you.
-    - Pick up a pistol from the desk.
-    - Press "Left Mouse Button" to shoot. Don't worry, your bullets won't do any harm
-      in Alternate Reality.
-    - Your next experiment involves short time travelling. You may experience permanent
-      psychological or corporal traumas. Be warned that once you activate your time
-      travelling device, Our company will not be responsible for any mental or physical
-      damage you took. So, good luck!
-    - To end this course, pick up a key card from the desk and Use it on the blast
-      door.
---- !u!61 &1408501479
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408501476}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1438597832
 GameObject:
   m_ObjectHideFlags: 0
@@ -5607,6 +5607,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1034039335}
     m_Modifications:
+    - target: {fileID: 1863894542722083061, guid: 39e357cb6e34bc44fb50283d6eff98f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 681603684}
+    - target: {fileID: 1863894542722083061, guid: 39e357cb6e34bc44fb50283d6eff98f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863894542722083061, guid: 39e357cb6e34bc44fb50283d6eff98f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863894542722083061, guid: 39e357cb6e34bc44fb50283d6eff98f6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2435973624130231092, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
       propertyPath: m_FontData.m_Font

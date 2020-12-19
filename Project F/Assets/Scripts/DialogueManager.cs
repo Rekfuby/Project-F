@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence(dialogueFlag);
     }
 
-    public void DisplayNextSentence(bool isPlayer)
+    public void DisplayNextSentence(bool dialogueFlag)
     {
         if (playerSentences.Count == 0 && npcSentences.Count == 0)
         {
