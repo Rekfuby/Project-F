@@ -1,0 +1,91 @@
+[33mcommit cfec0a1be3481ff68b32439866168566fec3b982[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Fri Nov 27 21:49:45 2020 +0900
+
+    added GitHub for Unity plugin and first enemy(basic)
+
+[33mcommit 12deb7509b874cfab37126d33a1aa371e88124ce[m
+Author: D-iardan <D-iardan@yandex.ru>
+Date:   Thu Nov 26 14:16:15 2020 +0900
+
+    shooting added
+
+[33mcommit fff4f9b1d0799142cc2797efc9ea0f56769978a8[m
+Merge: f3625b6 dbe8715
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Thu Nov 26 00:44:14 2020 +0900
+
+    merge
+
+[33mcommit f3625b67846a5a5fe45888157cdce467629147ed[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Wed Nov 25 23:25:54 2020 +0900
+
+    added basic ui
+
+[33mcommit dbe87158363f44e9b8c6c0f994126b755c041791[m
+Author: D-iardan <D-iardan@yandex.ru>
+Date:   Sat Nov 21 16:12:04 2020 +0900
+
+    healthbar add
+
+[33mcommit b39b4d4fea328e97eb92b4fd1d345a780a3616ef[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Sat Nov 21 01:24:02 2020 +0900
+
+    fixed gitignore
+
+[33mcommit ba78b10a75c7694121ecf3b2c093356d73c350dd[m
+Merge: 699d865 b6c3ae4
+Author: plenzke <3njoyth3sil3nc399@gmail.com>
+Date:   Sat Nov 21 00:46:06 2020 +0900
+
+    Merged commit by Rekfuby
+
+[33mcommit 699d865cea53f1f012b36b2926bd43f674a20ca0[m
+Author: plenzke <3njoyth3sil3nc399@gmail.com>
+Date:   Sat Nov 21 00:16:19 2020 +0900
+
+    added sprint
+
+[33mcommit b6c3ae4a4768ca4a190c5427ca06392def78d4bc[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Fri Nov 20 22:18:12 2020 +0900
+
+    added vertical movement animations
+
+[33mcommit c06e3e65baee8a680858f3fa211186a742bddf70[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Fri Nov 20 03:22:04 2020 +0900
+
+    added main menu scene, fixed mc horizontal movement animations and map sprites
+
+[33mcommit 9814e601541d1b9815ea995ce2ccdd1ef2602a67[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Sat Nov 7 14:25:45 2020 +0900
+
+    added basic char animations(horizontal movement and idling)
+
+[33mcommit 71a10118be077baf3c365c15c92ada722ad46c44[m[33m ([m[1;31morigin/demo[m[33m)[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Sat Oct 31 16:05:16 2020 +0900
+
+    updated readme.md
+
+[33mcommit 4cc3331c14c7305c8f67922faf1ef0d825d83a29[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Sat Oct 31 15:01:26 2020 +0900
+
+    added project base
+
+[33mcommit c5ba4577cdee89e78af8360a7f8712783682dffe[m
+Author: Rekfuby <trollebane@gmail.com>
+Date:   Sat Oct 31 14:59:30 2020 +0900
+
+    added gitignore(unity)
+
+[33mcommit 769644b6a906ff0e89e9b8911d4afa0dce5b48cd[m
+Author: Rekfuby <Trollebane@gmail.com>
+Date:   Sat Oct 10 15:53:11 2020 +0900
+
+    Initial commit
