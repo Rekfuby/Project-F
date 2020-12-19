@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D body;
 	TimeTravel traveling;
-	
+    AudioSource audio;
+
     public Animator animator;
     public Vector2 playerVelocity;
     public BulletController bulletController;
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour
     float horizontal;
     float vertical;
     float isRunning;
+    bool isMoving;
 
     public int maxAmmo;
     public int currentAmmo;
@@ -24,12 +28,16 @@ public class PlayerController : MonoBehaviour
 
     public float walkSpeed = 2.5f;
     public float runSpeed = 5.0f;
+    public AudioClip[] clips;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
 		traveling = GetComponent<TimeTravel>();
         plane = new Plane(Vector3.back, 0);
+        audio = GetComponent<AudioSource>();
+        audio.playOnAwake = false;
+        audio.loop = false;
     }
 
     void Update()
@@ -51,18 +59,34 @@ public class PlayerController : MonoBehaviour
 				if (isRunning > 0)
 				{
 					playerVelocity *= runSpeed;
-				}
+                    if (!audio.isPlaying)
+                    {
+                        audio.clip = clips[1];
+                        audio.volume = Random.Range(0.3f, 0.5f);
+                        audio.Play();
+                    }
+                }
 				else 
 				{
 					playerVelocity *= walkSpeed;
-				}
+                    if (!audio.isPlaying)
+                    {
+                        audio.clip = clips[0];
+                        audio.volume = Random.Range(0.3f, 0.5f);
+                        audio.Play();
+                    }
+                }
 			}
 			else
 			{
 				playerVelocity = Vector2.zero;
-			}
-
-			body.velocity = playerVelocity;
+                if (!audio.isPlaying)
+                {
+                    audio.Stop();
+                }
+            }
+ 
+            body.velocity = playerVelocity;
 			//Debug.Log(body.velocity);
 			attackCooldown += Time.deltaTime;
 
