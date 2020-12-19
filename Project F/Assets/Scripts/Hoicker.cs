@@ -35,7 +35,7 @@ public class Hoicker : BaseEnemy
     
     void Update()
     {
-		playerOffPos = (Vector2)playerObj.transform.position + new Vector2(0, -1);
+		playerOffPos = (Vector2)playerObj.transform.position;
 		
 		if (!attacking)
 		{
