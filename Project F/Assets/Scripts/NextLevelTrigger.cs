@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class NextLevelTrigger : MonoBehaviour
 {
     public AudioSource OpenAudio;
-
+	public bool canProceed;
+	
     void Start()
     {
-       
+       canProceed = false;
     }
 
     void Update()
@@ -19,7 +20,7 @@ public class NextLevelTrigger : MonoBehaviour
 	
 	void OnTriggerEnter2D (Collider2D other)
 	{
-        if (other.gameObject.tag == "Player") 
+        if (other.gameObject.tag == "Player" && canProceed) 
 		{
 			SceneManager.LoadScene("StartingLabs");
             OpenAudio.Play();

@@ -14,7 +14,6 @@ public class DialogueManager : MonoBehaviour
     int npcReplicaCount = 0;
     int[] dialogLogic = new int[] {0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0};
 
-    // Start is called before the first frame update
     void Start()
     {
         playerSentences = new Queue<string>();
@@ -147,6 +146,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         DialogueMenu.dialogueMenu.NpcButtonPressed();
+		
     }
 
 }
