@@ -356,8 +356,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1959494777
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -369,7 +369,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!95 &54927087
 Animator:
   serializedVersion: 3
@@ -1634,6 +1634,57 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &798462278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798462280}
+  - component: {fileID: 798462279}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &798462279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798462278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc044426f55132438845a53f44c38f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicMovement: 0
+  advancedMovement: 0
+  itemInteraction: 0
+  shooting: 0
+  passedBasicMovement: 0
+  passedAdvancedMovement: 0
+  passedItemInteraction: 0
+  passedShooting: 0
+--- !u!4 &798462280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798462278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.5680437, y: -0.5764447, z: -8.379473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &828528483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenAudio: {fileID: 8300000, guid: d8c31d0394f47f740ba255ed5c8858a5, type: 3}
+  canProceed: 0
 --- !u!82 &857909291
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3052,7 +3104,7 @@ MonoBehaviour:
     - Shame...
     npcName: Dok
     npcSentences:
-    - Good morning, Mr. Illarionov! Welcome to Obligatory Pre-Experiment Alternate
+    - Good morning, Mr. Illarionov! Welcome to Obligatory Pre-Experiment Virtual
       Reality Hazard Course, where you'll be trained for your next experiment. I
       am your robotic assistant model IFSX-001, but you can call me Dok.
     - This is your 56th course of this year, good job!
@@ -3063,7 +3115,7 @@ MonoBehaviour:
     - Press "E" to Use or Pick up an object near you.
     - Pick up a pistol from the desk.
     - Press "Left Mouse Button" to shoot. Don't worry, your bullets won't do any
-      harm in Alternate Reality.
+      harm in VR.
     - Your next experiment involves short time travelling. You may experience permanent
       psychological or corporal traumas. Be warned that once you activate your time
       travelling device, Our company will not be responsible for any mental or physical
@@ -4371,6 +4423,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4930699101966508442, guid: 39e357cb6e34bc44fb50283d6eff98f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5284955777865796377, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
       propertyPath: m_fontAsset
@@ -4530,7 +4587,7 @@ PrefabInstance:
     - target: {fileID: 8491591749318396702, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -102.2
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 8491591749318396702, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
@@ -4550,7 +4607,7 @@ PrefabInstance:
     - target: {fileID: 8491591749318396702, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8491591749318396702, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
@@ -4560,7 +4617,7 @@ PrefabInstance:
     - target: {fileID: 8491591749318396702, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8491591749318396702, guid: 39e357cb6e34bc44fb50283d6eff98f6,
         type: 3}

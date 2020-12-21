@@ -8,7 +8,6 @@ public class ItemPickup : MonoBehaviour
 	private GameObject nextLevelTrigger = null;
 	Vector2 playerOffPos;
 	
-	
     void Start()
     {
         if (playerObj == null)

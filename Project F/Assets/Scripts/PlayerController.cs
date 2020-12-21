@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     float isRunning;
     bool isMoving;
 	public bool hasWeapon;
+	public bool canTravel;
 
     public int maxAmmo;
     public int currentAmmo;
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+		canTravel = false;
 		hasWeapon = false;
         body = GetComponent<Rigidbody2D>();
 		traveling = GetComponent<TimeTravel>();
@@ -109,7 +111,7 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 			
-			if (Input.GetButtonDown("Fire2"))
+			if (Input.GetButtonDown("Fire2") && canTravel)
 			{
 				traveling.travel();
 			}

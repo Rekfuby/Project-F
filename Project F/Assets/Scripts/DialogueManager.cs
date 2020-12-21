@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+	private GameObject tutorial = null;
+	TutorialManager tutscr;
+	
     private Queue<string> playerSentences;
     private Queue<string> npcSentences;
     public bool dialogueFlag;
@@ -14,8 +17,14 @@ public class DialogueManager : MonoBehaviour
     int npcReplicaCount = 0;
     int[] dialogLogic = new int[] {0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0};
 
+
     void Start()
     {
+		if (tutorial == null)
+		{
+			tutorial = GameObject.Find("TutorialManager");
+			tutscr = tutorial.GetComponent<TutorialManager>();
+		}
         playerSentences = new Queue<string>();
         npcSentences = new Queue<string>();
         playerReplicaCount = 1;
@@ -107,10 +116,14 @@ public class DialogueManager : MonoBehaviour
                 case 4:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					tutscr.disableContinueButton();
+					tutscr.basicMovement = true;
                     break;
                 case 5:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					tutscr.disableContinueButton();
+					tutscr.advancedMovement = true;
                     break;
                 case 6:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
@@ -123,10 +136,16 @@ public class DialogueManager : MonoBehaviour
                 case 8:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					tutscr.disableContinueButton();
+					tutscr.itemInteraction = true;
+					tutscr.SpawnPistol();
                     break;
                 case 9:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					tutscr.findContinueButton();
+					tutscr.disableContinueButton();
+					tutscr.shooting = true;
                     break;
                 case 10:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
@@ -135,6 +154,7 @@ public class DialogueManager : MonoBehaviour
                 case 11:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					tutscr.SpawnKeycard();
                     break;
                 default:
                     break;
@@ -148,5 +168,5 @@ public class DialogueManager : MonoBehaviour
         DialogueMenu.dialogueMenu.NpcButtonPressed();
 		
     }
-
+	
 }
