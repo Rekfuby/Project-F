@@ -15608,6 +15608,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5476472271171998577, guid: e2de5154d55f54d4e96f11588774c6e6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5476472271171998581, guid: e2de5154d55f54d4e96f11588774c6e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15711,6 +15716,11 @@ PrefabInstance:
     - target: {fileID: 5476472271171998581, guid: e2de5154d55f54d4e96f11588774c6e6,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5476472271197473109, guid: e2de5154d55f54d4e96f11588774c6e6,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

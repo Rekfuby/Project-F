@@ -88,6 +88,7 @@ public class TutorialManager : MonoBehaviour
 		{
 			if (playerObj.GetComponent<PlayerController>().hasWeapon)
 			{
+				playerObj.GetComponent<PlayerController>().canTravel = true;
 				passedItemInteraction = true;
 				enableContinueButton();
 				itemInteraction = false;
@@ -101,7 +102,6 @@ public class TutorialManager : MonoBehaviour
 				passedShooting = true;
 				enableContinueButton();
 				shooting = false;
-				playerObj.GetComponent<PlayerController>().hasWeapon = false;
 			}
 		}
     }
