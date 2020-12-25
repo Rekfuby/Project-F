@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 			
-			if (Input.GetButtonDown("Fire2") && canTravel)
+			if (Input.GetButtonDown("Fire2") /*&& canTravel*/)
 			{
 				traveling.travel();
 			}

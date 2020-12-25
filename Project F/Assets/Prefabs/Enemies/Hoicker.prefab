@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8263104782604960217}
   - component: {fileID: 8263104782604960218}
   - component: {fileID: 8263104782604960216}
+  - component: {fileID: 2281131056435357649}
   m_Layer: 9
   m_Name: Hoicker
   m_TagString: Untagged
@@ -118,7 +119,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07778174, y: -0.22752833}
+  m_Offset: {x: 0.011550903, y: -0.22752833}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +130,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8444365, y: 0.22903395}
+  m_Size: {x: 0.9343262, y: 0.22903395}
   m_EdgeRadius: 0
 --- !u!114 &8263104782604960216
 MonoBehaviour:
@@ -144,3 +145,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  animator: {fileID: 2281131056435357649}
+--- !u!95 &2281131056435357649
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263104782604960221}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dc3f5d7cb6d1541458dbeaafd1d6d35e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

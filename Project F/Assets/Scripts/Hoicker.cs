@@ -11,10 +11,12 @@ public class Hoicker : BaseEnemy
 	private Vector2 startingPos;
 	private Vector2 movement;
 	
+	public Animator animator;
+	
 	float targetRange = 5f;
 	float attackRange = 1.3f;
 	
-	float preAttackTime = 0.75f;
+	float preAttackTime = 0.66f;
 	float attackCD = 1f;
 	float attackTimer = 0;
 	bool foundTarget = false;
@@ -36,6 +38,14 @@ public class Hoicker : BaseEnemy
     void Update()
     {
 		playerOffPos = (Vector2)playerObj.transform.position;
+		if (playerOffPos.x < transform.position.x)
+		{
+			animator.SetBool("Mirror", false);
+		}
+		else
+		{
+			animator.SetBool("Mirror", true);
+		}
 		
 		if (!attacking)
 		{
@@ -44,6 +54,7 @@ public class Hoicker : BaseEnemy
 				if (Vector2.Distance(transform.position, playerOffPos) < attackRange)
 				{
 					attackTarget();
+					animator.SetBool("Attacking", true);
 				}
 				else
 				{
@@ -82,6 +93,7 @@ public class Hoicker : BaseEnemy
 					{
 						attacking = false;
 						attackOnCD = false;
+						animator.SetBool("Attacking", false);
 					}
 				}
 			}

@@ -14,6 +14,7 @@ public class BulletController : MonoBehaviour
     public LayerMask canAttackLayers;
     public LayerMask wallLayer;
 
+	
     void Update()
     {
         lifeTime -= Time.deltaTime;

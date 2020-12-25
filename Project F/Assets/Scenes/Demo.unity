@@ -4332,11 +4332,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hoicker
       objectReference: {fileID: 0}
-    - target: {fileID: 8263104782604960221, guid: aeab97fd88bb4e64a9391df926036784,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeab97fd88bb4e64a9391df926036784, type: 3}
 --- !u!1001 &8491591750760866236
