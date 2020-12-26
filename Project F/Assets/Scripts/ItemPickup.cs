@@ -37,6 +37,11 @@ public class ItemPickup : MonoBehaviour
 				nextLevelTrigger.GetComponent<NextLevelTrigger>().canProceed = true;
 				Destroy(this.gameObject);
 			}
+			if (name == "Chronos")
+			{
+				playerObj.GetComponent<PlayerController>().canTravel = true;
+				Destroy(this.gameObject);
+			}
 		}
     }
 	
