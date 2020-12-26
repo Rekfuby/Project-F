@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class MaxwellDialogueManager : MonoBehaviour
 {
+	private GameObject maxwell = null;
+	private GameObject labs = null;
+	LabsManager labscr;
+	
     private Queue<string> playerSentences;
     private Queue<string> npcSentences;
     public bool dialogueFlag;
@@ -16,6 +20,18 @@ public class MaxwellDialogueManager : MonoBehaviour
 
     void Start()
     {
+		if (maxwell == null)
+		{
+			maxwell = GameObject.Find("Maxwell");
+			
+		}
+		
+		if (labs == null)
+		{
+			labs = GameObject.Find("LabsManager");
+			labscr = labs.GetComponent<LabsManager>();
+		}
+		
         playerSentences = new Queue<string>();
         npcSentences = new Queue<string>();
         playerReplicaCount = 1;
@@ -98,12 +114,14 @@ public class MaxwellDialogueManager : MonoBehaviour
             switch (npcReplicaCount)
             {
                 case 1:
+					maxwell.GetComponent<Maxwell>().idle1();
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
                     break;
                 case 2:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					maxwell.GetComponent<Maxwell>().idle1();
                     break;
                 case 3:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
@@ -116,10 +134,12 @@ public class MaxwellDialogueManager : MonoBehaviour
                 case 5:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					maxwell.GetComponent<Maxwell>().walkDown();
                     break;
                 case 6:
                     DialogueMenu.dialogueMenu.SetNpcText(npcSentence);
                     npcReplicaCount++;
+					labscr.unlockSlideDoor();
                     break;
                 default:
                     break;

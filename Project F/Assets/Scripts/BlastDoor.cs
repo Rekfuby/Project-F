@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlastDoor : MonoBehaviour
 {
-	bool opened = false;
+	public bool opened = false;
 	Vector2 playerOffPos;
 	BoxCollider2D collider2d;
 	public bool locked = true;
@@ -30,17 +30,11 @@ public class BlastDoor : MonoBehaviour
 			{
 					if (!opened)
 				{
-					animator.SetTrigger("Open");
-					opened = true;
-					animator.SetBool("isOpened", true);
-					collider2d.enabled = false;
+					open();
 				}
 				else
 				{
-					animator.SetTrigger("Close");
-					opened = false;
-					animator.SetBool("isOpened", false);
-					collider2d.enabled = true;
+					close();
 				}
 			}
 			else
@@ -63,4 +57,21 @@ public class BlastDoor : MonoBehaviour
 		}
 		
 	}
+	
+	public void open()
+	{
+		animator.SetTrigger("Open");
+		opened = true;
+		animator.SetBool("isOpened", true);
+		collider2d.enabled = false;
+	}
+	
+	public void close()
+	{
+		animator.SetTrigger("Close");
+		opened = false;
+		animator.SetBool("isOpened", false);
+		collider2d.enabled = true;
+	}
+	
 }
