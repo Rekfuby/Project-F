@@ -38,6 +38,42 @@ public class MaxwellDialogueManager : MonoBehaviour
         npcReplicaCount = 1;
     }
 
+    public void StartLockDoorDialogue(Dialogue LockDoorDialogue)
+    {
+        string levelSentence = "";
+        playerSentences.Clear();
+        foreach (string Sentence in LockDoorDialogue.playerSentences)
+        {
+            playerSentences.Enqueue(Sentence);
+        }
+        levelSentence = playerSentences.Dequeue();
+        DialogueMenu.dialogueMenu.SetPlayerText(levelSentence);
+    }
+
+    public void StartPromptDialogue(Dialogue PromptDialogue)
+    {
+        string levelSentence = "";
+        playerSentences.Clear();
+        foreach (string Sentence in PromptDialogue.playerSentences)
+        {
+            playerSentences.Enqueue(Sentence);
+        }
+        levelSentence = playerSentences.Dequeue();
+        DialogueMenu.dialogueMenu.SetPlayerText(levelSentence);
+    }
+
+    public void StartHoickerDialogue(Dialogue HoickerDialogue)
+    {
+        string levelSentence = "";
+        playerSentences.Clear();
+        foreach (string Sentence in HoickerDialogue.playerSentences)
+        {
+            playerSentences.Enqueue(Sentence);
+        }
+        levelSentence = playerSentences.Dequeue();
+        DialogueMenu.dialogueMenu.SetPlayerText(levelSentence);
+    }
+
     public void StartDialogue(Dialogue maxwellDialogue)
     {
         npcNameText.text = maxwellDialogue.npcName;
