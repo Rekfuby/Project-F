@@ -26721,6 +26721,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2481962185713321628, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 3568211242413965983, guid: 6b252de652f2e1343a58eff726a66df2,
+        type: 2}
+    - target: {fileID: 2481962185713321628, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
+        type: 3}
+      propertyPath: BypassReverbZones
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8613867620926003752, guid: 1ba2e1607c217f14b88f6da9f6be4b33,
         type: 3}
       propertyPath: m_LocalPosition.x
