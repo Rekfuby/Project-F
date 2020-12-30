@@ -8,11 +8,13 @@ public class BaseEnemy : MonoBehaviour
 	protected float maxHealth = 5f;
 	[SerializeField]
 	protected float moveSpeed = 3f;
-	
-	public void damaged(float damage)
+    protected bool hit = false;
+
+    public void damaged(float damage)
 	{
 		health = health - damage;
-		if (health <= 0) 
+        hit = true;
+        if (health <= 0) 
 		{
 			Dead();
 		}

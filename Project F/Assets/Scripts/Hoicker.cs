@@ -7,13 +7,16 @@ public class Hoicker : BaseEnemy
     private GameObject playerObj = null;
 	Vector2 playerOffPos;
 	Rigidbody2D body;
-	
-	private Vector2 startingPos;
+    AudioSource audioSrc;
+    BulletController bullet;
+
+    private Vector2 startingPos;
 	private Vector2 movement;
 	
 	public Animator animator;
-	
-	float targetRange = 5f;
+    public AudioClip[] clip;
+
+    float targetRange = 5f;
 	float attackRange = 1.3f;
 	
 	float preAttackTime = 0.66f;
@@ -26,7 +29,10 @@ public class Hoicker : BaseEnemy
 	
     void Start()
     {
-		body = GetComponent<Rigidbody2D>();
+        body = GetComponent<Rigidbody2D>();
+        audioSrc = GetComponent<AudioSource>();
+        audioSrc.playOnAwake = false;
+        audioSrc.loop = false;
         startingPos = transform.position;
 		if (playerObj == null)
 		{
@@ -43,32 +49,44 @@ public class Hoicker : BaseEnemy
 			animator.SetBool("Mirror", false);
 		}
 		else
-		{
-			animator.SetBool("Mirror", true);
+		{  
+            animator.SetBool("Mirror", true);
 		}
-		
-		if (!attacking)
+        if (!attacking)
 		{
-			if (foundTarget)
+            if (foundTarget)
 			{
 				if (Vector2.Distance(transform.position, playerOffPos) < attackRange)
 				{
-					attackTarget();
+                    audioSrc.loop = false;
+                    audioSrc.clip = clip[Random.Range(1,3)];
+                    audioSrc.volume = Random.Range(0.5f, 4f);
+                    audioSrc.Play();
+                  
+                    attackTarget();
 					animator.SetBool("Attacking", true);
 				}
 				else
 				{
-					Vector2 direction = playerOffPos - (Vector2)transform.position;
+                    Vector2 direction = playerOffPos - (Vector2)transform.position;
 					float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 					direction.Normalize();
 					movement = direction;
-					chaseCharacter(movement);
-				}
-			}
+                    chaseCharacter(movement);
+                }
+               
+            }
 			else
 			{
-				findTarget();
-			}
+                if (!audioSrc.isPlaying)
+                {
+                    audioSrc.loop = true;
+                    audioSrc.clip = clip[0];
+                    audioSrc.volume = Random.Range(0.3f, 5f);
+                    audioSrc.Play();
+                }
+                findTarget();   
+            }
 		}
 		else
 		{
@@ -82,7 +100,7 @@ public class Hoicker : BaseEnemy
 				{
 					if (Vector2.Distance(transform.position, playerOffPos) < attackRange)
 					{
-						playerObj.GetComponent<HealthSystem>().health -= 1;
+                        playerObj.GetComponent<HealthSystem>().health -= 1;
 					}
 					attackOnCD = true;
 				}
@@ -98,13 +116,21 @@ public class Hoicker : BaseEnemy
 				}
 			}
 		}
+        if (hit)
+        {
+            audioSrc.loop = false;
+            audioSrc.clip = clip[Random.Range(3, 5)];
+            audioSrc.volume = Random.Range(0.5f, 4f);
+            audioSrc.Play();
+            hit = false;
+        }
     }
 	
 	private void findTarget()
 	{
 		if (Vector2.Distance(transform.position, playerOffPos) < targetRange)
-		{
-			Debug.Log("Chasing player");
+		{    
+            Debug.Log("Chasing player");
 			foundTarget = true;
 		}
 	}
@@ -113,11 +139,18 @@ public class Hoicker : BaseEnemy
 	{
 		if (Vector2.Distance(transform.position, playerOffPos) >= targetRange + 2f)
 		{
-			foundTarget = false;
+            foundTarget = false;
 		}
 		else {
-			body.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime));
-		}
+            if (!audioSrc.isPlaying)
+            {
+                audioSrc.loop = true;
+                audioSrc.clip = clip[5];
+                audioSrc.volume = Random.Range(0.8f, 2f);
+                audioSrc.Play();
+            }
+            body.MovePosition((Vector2)transform.position + (direction * moveSpeed * Time.deltaTime)); 
+        }
 	}
 	
 	void attackTarget()

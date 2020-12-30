@@ -11,6 +11,7 @@ public class BlastDoor : MonoBehaviour
 	
 	private GameObject playerObj = null;
 	public Animator animator;
+    public AudioSource doorAudio;
 	
 	void Start()
     {
@@ -19,6 +20,8 @@ public class BlastDoor : MonoBehaviour
 			playerObj = GameObject.Find("Player");
 		}
 		collider2d = GetComponent<BoxCollider2D>();
+        doorAudio.playOnAwake = false;
+        doorAudio.loop = false;
     }
 
     void Update()
@@ -31,11 +34,13 @@ public class BlastDoor : MonoBehaviour
 					if (!opened)
 				{
 					open();
-				}
+                    doorAudio.Play();
+                }
 				else
 				{
 					close();
-				}
+                    doorAudio.Play();
+                }
 			}
 			else
 			{

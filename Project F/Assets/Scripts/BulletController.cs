@@ -40,7 +40,7 @@ public class BulletController : MonoBehaviour
         {
 			if (hit.gameObject.GetComponent<BaseEnemy>() != null)
 			{
-				hit.gameObject.GetComponent<BaseEnemy>().damaged(damage);
+                hit.gameObject.GetComponent<BaseEnemy>().damaged(damage);
 				//hit.gameObject.GetComponent<EntityBase>().Damaged(damage* player.GetDamageModifier());
 				//hit.gameObject.GetComponent<EntityBase>().ApplyKnockback(0.1f*player.GetRangeWeaponHoldModifier(),player.knockbackVector2D(hit.gameObject.transform.position,player.gameObject.transform.position), player.GetRangeWeaponKnockbackModifier());
 				Destroy(this.gameObject);
